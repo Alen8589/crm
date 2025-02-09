@@ -34,6 +34,6 @@ async function bootstrap() {
   app.setGlobalPrefix('api')
   app.useGlobalInterceptors(new ResponseInterceptor());
 
-  await app.listen(process.env.PORT ?? 8800);
+  await app.listen(process.env.PORT ,'0.0.0.0');
 }
 bootstrap();
